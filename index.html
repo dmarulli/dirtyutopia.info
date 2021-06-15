@@ -27,12 +27,12 @@
     width: 18%;
   }
   /* #learn_more {
-    position: absolute;
-    cursor: pointer;
-    top: 15.25%;
-    left: 4.5%;
-    height: 11%;
-    width: 92%;
+  position: absolute;
+  cursor: pointer;
+  top: 15.25%;
+  left: 4.5%;
+  height: 11%;
+  width: 92%;
   } */
   #visit_now {
     position: absolute;
@@ -87,6 +87,13 @@
             ;e.amplitude=n})(window,document);
 
             amplitude.getInstance().init("3276f66b27e8880398d04823504a40f8");
+            $(window).on('load',function(){
+              var delayMs = 0; // delay in milliseconds
+
+              setTimeout(function(){
+                $('#learn_more_modal').modal('show');
+              }, delayMs);
+            });
             </script>
           </head>
           <body>
